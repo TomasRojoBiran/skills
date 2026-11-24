@@ -1,34 +1,34 @@
 # Skills
 
-A collection of reusable skills for coding agents.
+My skills for coding agents.
 
 ## Structure
 
 ```text
 skills/     # Skill definitions
 commands/   # OpenCode commands
-evals/      # Test cases
-install.sh  # Installation script
+evals/      # Evaluations
+install.sh  # Installer
 ```
 
 ## Installation
-
-Run from the repository on Linux:
 
 ```bash
 ./install.sh
 ```
 
-The script links skills to `~/.agents/skills/` and commands to `~/.config/opencode/commands/` (or your configured OpenCode directory). The repository is the source of truth: the script skips correct links, replaces conflicting files, directories and links, and removes duplicate OpenCode-specific skill definitions. Unrelated skills and commands are left untouched.
+The installer links skills to `~/.agents/skills/` and commands to `~/.config/opencode/commands/`.
 
-Run it again when adding new skills or commands. Changes to existing ones are picked up through the links. Restart OpenCode if needed.
+Existing conflicts and duplicate definitions are removed and replaced as needed. Unrelated skills and commands are left untouched.
 
-## Adding a skill
+Run the installer when adding new skills or commands. Changes to existing ones require no reinstallation.
 
-1. Create a directory under `skills/` with a `SKILL.md` file.
-2. Add an OpenCode command under `commands/` if needed.
-3. Add test cases under `evals/`.
-4. Run `./install.sh` and test the skill.
+## Development
+
+1. Create a directory under `skills/` containing a `SKILL.md`.
+2. Add a command under `commands/` if needed.
+3. Define evaluations under `evals/`.
+4. Install and evaluate the skill.
 
 ## References
 
