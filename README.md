@@ -19,7 +19,7 @@ Run from the repository on Linux:
 ./install.sh
 ```
 
-The script links skills to `~/.agents/skills/` and commands to `~/.config/opencode/commands/` (or your configured OpenCode directory). The repository is the source of truth: the script skips correct links, replaces conflicting files, directories and links, and removes duplicate OpenCode-specific skill definitions. Conflicts are removed without backups. Unrelated skills and commands are left untouched.
+The script links skills to `~/.agents/skills/` and commands to `~/.config/opencode/commands/` (or your configured OpenCode directory). The repository is the source of truth: the script skips correct links, replaces conflicting files, directories and links, and removes duplicate OpenCode-specific skill definitions. Unrelated skills and commands are left untouched.
 
 Run it again when adding new skills or commands. Changes to existing ones are picked up through the links. Restart OpenCode if needed.
 
