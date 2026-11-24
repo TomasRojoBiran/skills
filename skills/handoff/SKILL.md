@@ -5,7 +5,7 @@ metadata:
   opencode/autoinvoke: false
 ---
 
-Distill the current session into a self-contained prompt for a fresh agent. Prioritize the user's intended focus for the next session.
+Distill the current session into a self-contained prompt for a fresh agent. If the user specifies a focus, tailor the handoff to that focus.
 
 - Preserve relevant progress, decisions, rationale, constraints, and blockers.
 - Distinguish proposed, completed, and verified work. Preserve uncommitted changes and pending approvals.
